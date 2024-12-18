@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <!-- <link rel="stylesheet" href="recipefinder.css"> -->
+    <style>
+        body{
+            background-image: url("bg.jpg");
+            background-repeat: repeat;
+            background-size:contain;
+        }
+        #id1{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("poha.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }
+         h5{
+            margin-bottom:17px;
+            font-weight: bold;
+            opacity:1;
+        } 
+        #button{
+            align-self: center;
+            background-color: #f76f6f;
+            border-radius: 10%; 
+            margin-bottom: 20px;
+            margin-left: 15px; 
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;  
+        }
+    
+        #id2{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("moongdalcheela.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id3{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("vegetable-soup.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id4{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("cucumber.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id5{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("khichdi.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id6{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("sprouts.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }
+        #id11{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("oats.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id12{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("sambar.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id13{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("Chana.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id14{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("palak.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id15{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("dokla.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id16{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("vegp.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            
+        }
+        #id21{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("mushroom.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id22{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("CurdRice.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id23{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("tomatorice.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id24{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("coconutrice.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id25{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("masalarice.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        }#id26{
+            background-color: white;
+            height:200px;
+            width:180px;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20%;
+            background-image: url("spinachrice.jpg");
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position-x: center;
+            background-position-y:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+        } 
+        h2{
+            font-family: sans-serif;
+            font-weight: 80px;
+            text-align: center;
+            font-style: bold;
+            color:rgb(255, 255, 255);
+            text-decoration: underline;
+            opacity: 1;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        .class1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; 
+            margin-top:20px 10px;
+            padding: 10px 20px;  
+        
+        }
+        .class2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; 
+            margin-top:30px 10px;
+            padding: 10px 20px;
+        }
+        .class3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; 
+            margin-top: 10px 10px;
+            padding: 10px 20px;
+        }
+        .class4{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; 
+            margin-top: 10px 10px;
+            padding: 10px 20px;  
+        
+        }
+        .class5{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; 
+            margin-top: 10px 10px;
+            padding: 10px 20px;
+        }
+        .class6{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; 
+            margin-top: 10px 10px;
+            padding: 10px 20px;
+        }
+        a{
+            text-decoration:none;
+            font-weight:bold;
+            font-family: serif;
+            color: green;
+            font-weight: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 20px;
+            font-size: 16px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        a:hover {
+            color: #ff5c5c;
+            transform: scale(1.1);
+        }
+        #green{
+            color: green;
+        }
+        #main{
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 1600px;
+            width:80%;
+            margin-left: 200px;
+            margin-right: 100px;
+            margin-top: 10px;    
+            animation: fadeIn 1s ease-out;
+        }
+        #text {
+            width: 400px; 
+            height: 30px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 14px;
+            padding: 5px 20px;
+            display: flex;
+            flex-direction:row;
+            justify-content: flex-end;
+        }
+        #nav{
+            display: flex;
+            flex-direction:row;
+            font-weight:bold;
+            justify-content: space-around;
+            
+        }
+        .icon{
+            display: flex;
+            flex-direction:row;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            color: white;
+            text-shadow: #0c0c0c;
+            padding-top: 10px;
+        }
+        
+        #id1, #id2, #id3, #id4, #id5, #id6, #id11, #id12, #id13, #id14,
+         #id15, #id16, #id21, #id22, #id23, #id24, #id25, #id26,text {
+            box-shadow: 0px 4px 10px rgb(77, 12, 207);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+        }
+        
+        #id1:hover, #id2:hover, #id3:hover, #id4:hover, #id5:hover, #id6:hover, 
+        #id11:hover, #id12:hover, #id13:hover, #id14:hover, #id15:hover, #id16:hover, 
+        #id21:hover, #id22:hover, #id23:hover, #id24:hover, #id25:hover, #id26:hover,#text:hover {
+            box-shadow: 0px 6px 15px rgb(255, 0, 0);
+            transform: scale(1.05); 
+            background-color: #f9b1b1;
+        }
+        #button:hover {
+            background-color: rgb(252, 249, 69);
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+    </style>
+</head>
+<body>
+   <div id="main">
+    <h2>RECIPE APPLICATION FINDER</h2>
+            <div id="nav">
+                <a href="#" class="icon">Home</a>
+                <a href="#" class="icon">Contact</a>
+                <a href="#" class="icon">About Us</a>
+                <input type="text" name="search" placeholder="Search" id="text">
+            </div>
+    <div class="class1">
+        <div id="id1"><h5>Vegetable Poha</h5>
+        <a href="poha.html" id="button"> Show Recipe </a></div>
+        <div id="id2"><h5>Moong Dal Chilla</h5>
+            <a href="moongdal .html" id="button"> Show Recipe </a></div>
+    <div id="id3"><h5>Mixed Vegetable Soup</h5>
+        <a href="vegetablesoup.html" id="button"> Show Recipe </a></div>
+    </div>
+    <div class="class2">
+        <div id ="id4"><h5>Cucumber Raita</h5>
+            <a href="cucumber.html" id="button"> Show Recipe </a></div>
+        <div id="id5"><h5>Khichdi</h5>
+            <a href="khichdi.html" id="button"> Show Recipe </a></div>
+        <div id="id6"><h5>Sprouts Salad</h5>
+            <a href="sprouts.html" id="button"> Show Recipe </a></div>
+
+    </div>
+    <div class="class3">
+        <div id="id11"><h5>Oats Idli</h5>
+            <a href="oats.html" id="button"> Show Recipe </a></div>
+        <div id="id12"><h5>Sambar Rice</h5>
+            <a href="sambar.html" id="button"> Show Recipe </a></div>
+    <div id="id13"><h5>Chana Salad</h5>
+        <a href="chana.html" id="button"> Show Recipe </a></div>
+    </div>
+    <div class="class4">
+            <div id ="id14"><h5>Palak (Spinach) Soup</h5>
+        <a href="palak.html" id="button"> Show Recipe </a></div>
+    <div id="id15"><h5>Steamed Dhokla</h5>
+        <a href="dokla.html" id="button"> Show Recipe </a></div>
+    <div id="id16"><h5>Vegetable Pulao</h5>
+        <a href="vegp.html" id="button"> Show Recipe </a></div>
+    </div>
+
+        <div class="class5">
+        <div id="id21"><h5>Mushroom Pulao</h5>
+            <a href="mushroom.html" id="button"> Show Recipe </a>
+        </div>
+        <div id="id22"><h5>Curd Rice</h5>
+            <a href="CurdRice.html" id="button"> Show Recipe </a>
+        </div>
+    <div id="id23"><h5>Tomato Rice</h5>
+        <a href="tomatorice.html" id="button"> Show Recipe </a>
+    </div></div>
+   <div class="class6">
+    <div id ="id24"><h5>Coconut Rice</h5>
+        <a href="coconutrice.html" id="button"> Show Recipe </a>
+    </div>
+    <div id="id25"><h5>Masala Rice</h5>
+        <a href="masalarice.html" id="button"> Show Recipe </a>
+    </div>
+    <div id="id26"><h5>Spinach Rice (Palak Rice)</h5>
+        <a href="spinachrice.html" id="button"> Show Recipe </a>
+    </div>
+</div></div>
+
+</body>
+</html>
